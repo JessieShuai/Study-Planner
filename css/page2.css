@@ -1,0 +1,66 @@
+.page2{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding: 2rem;
+    box-sizing: border-box;
+}
+.page2_title{
+    width: 100%;
+    text-align: left;
+    font-size: 3rem;
+    font-family: 'PaytoneOne';
+}
+.page2_content{
+    width: 100%;
+    height: calc(100% - 8rem);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+}
+.page2_content>div{
+    width: 49%;
+    height: calc(50% - 4rem);
+}
+.page2_sm_list{
+    width: 100%;
+    background-color: var(--color5);
+    border-radius: 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    margin-top: 1rem;
+    height: 90%;
+}
+.page2_sm_title{
+    font-size: 2rem;
+}
+.page2_mission{
+    width: 100%;
+    border: 1px solid black;
+    padding: 1rem 0;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    box-sizing: border-box;
+    margin: 1rem 0;
+}
+.page2_mission>.checkBox{
+    margin-left: 1rem;
+}
+.page2_mission_title{
+    font-size: 2rem;
+    font-family: 'SignikaBold';
+}
+@media screen and (max-width: 768px){
+    .page2_content{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+    .page2_content>div{
+        width: 100%;
+        margin: 2rem 0;
+    }
+}

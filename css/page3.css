@@ -1,0 +1,323 @@
+.page3{
+    width: 100%;
+    position: relative;
+}
+.page3_music_pop{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99;
+    background-color: rgba(0,0,0,0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.music_box{
+    width: 50%;
+    padding: 4rem;
+    box-sizing: border-box;
+    background-color: var(--color1);
+    border-radius: 5px;
+}
+.music_top{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.music_top>div{
+    display: inline-block;
+    background-color: white;
+    color: var(--color2);
+    padding: 0.5rem 2rem;
+    box-sizing: border-box;
+    font-size: 2rem;
+    font-family: PaytoneOne;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.music_con{
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+}
+.music_name{
+    margin-bottom: 1rem;
+}
+.music_con_left{
+    width: 10rem;
+    height: 10rem;
+    background-color: #191919;
+    padding: 2rem;
+    box-sizing: border-box;
+    border-radius: 100%;
+}
+.music_con_left_rotate{
+    animation: rotate 10s linear infinite;
+}
+@keyframes rotate{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+.music_con_right{
+    margin-left: 3rem;
+    color: white;
+    font-size: 3rem;
+    font-family: SignikaBold;
+    width: 60%;
+}
+.music_operation{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1rem;
+}
+.music_operation>div{
+    margin: 0 2rem;
+    width: 4rem;
+    cursor: pointer;
+}
+.page3_title{
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.page3_title>div{
+    display: inline-block;
+    padding: 1rem 3rem;
+    box-sizing: border-box;
+    border: 2px solid var(--color1);
+    font-size: 2rem;
+    border-radius: 1rem;
+    font-family: 'SignikaBold';
+    cursor: pointer;
+    color: var(--color1);
+    transition: all 0.3s;
+}
+.page3_title>div:hover{
+    background-color: var(--color1);
+    color: white;
+}
+.music{
+    height: 5rem !important;
+    background-color: var(--color1);
+}
+.music>img{
+    height: 100%;
+    width: auto;
+}
+.page3_stopWatch{
+    width: 100%;
+    height: calc(100% - 9rem);
+    margin-top: 2rem;
+    /*background-color: #2BAA30;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stopWatchPause,.stopWatchStop{
+    width: 15rem;
+    height: 15rem;
+    background-color: var(--color4);
+    border-radius: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: 'SignikaBold';
+    margin: 0 2rem;
+}
+.stopWatchStop{
+    background-color: var(--color2);
+    color: var(--color4);
+}
+.stopWatchTime{
+    width: 40rem;
+    height: 40rem;
+    border-radius: 100%;
+    border: 2px solid var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.stopWatchTimeChild{
+    width: 35rem;
+    height: 35rem;
+    border-radius: 100%;
+    border: 2px solid var(--color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 4rem;
+    font-family: PaytoneOne;
+}
+.activeWatch{
+    background-color: var(--color1);
+    color: white !important;
+}
+.page3_study{
+    width: 100%;
+    height: calc(100% - 9rem);
+    margin-top: 2rem;
+    overflow: auto;
+}
+.page3_study_set{
+    display: block;
+}
+.page3_study_set>div{
+    width: 100%;
+    height: 100%;
+}
+.page3_study_timer{
+    width: 100%;
+    height: calc(100% - 9rem);
+    margin-top: 2rem;
+    overflow: auto;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.page3_study_timer>div{
+    border-radius: 100%;
+    margin: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.study_time_left{
+    width: 15rem;
+    height: 15rem;
+    background-color: #E5E5E5;
+    font-size: 2.5rem;
+    font-family: 'SignikaBold';
+    cursor: pointer;
+}
+.study_time_right{
+    width: 15rem;
+    height: 15rem;
+    font-size: 2.5rem;
+    font-family: 'SignikaBold';
+    background-color: #021F59;
+    color: white;
+    cursor: pointer;
+}
+.study_time_timer{
+    width: 35rem;
+    height: 35rem;
+    font-size: 4rem;
+    font-family: 'PaytoneOne';
+    border: 2px solid #021F59;
+    background-color: white;
+}
+.page3_study_set>div{
+    margin: 2rem auto;
+}
+
+.setStudyTimer{
+    margin-top: 10rem !important;
+}
+
+.setTitle{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--color1);
+}
+.studyCom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.studyCom>div{
+    margin: 0 3rem;
+}
+.studyTime,.BreakTime{
+    font-size: 5rem;
+    font-family: PaytoneOne;
+    color: black;
+}
+.addStudy,.subStudy,.addBreak,.subBreak{
+    width: 5rem;
+    cursor: pointer;
+}
+.setStartBtn{
+    width: 15rem !important;
+    height: 15rem !important;
+    border: 2px solid var(--color2);
+    margin: auto;
+    color: var(--color2);
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100%;
+    font-family: SignikaBold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.setStartBtn:hover{
+    background-color: #021F59;
+    color: white;
+}
+@media screen and (max-width: 768px){
+    .stopWatchPause,.stopWatchStop{
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .stopWatchTime{
+        width: 25rem;
+        height: 25rem;
+    }
+    .stopWatchTimeChild{
+        width: 23rem;
+        height: 23rem;
+        font-size: 2rem;
+    }
+    .setStudyTimer{
+        margin-top: 3rem !important;
+    }
+    .study_time_left,.study_time_right{
+        width: 10rem;
+        height: 10rem;
+        font-size: 1.5rem;
+        margin: 0 1rem;
+    }
+    .study_time_timer{
+        width: 20rem;
+        height: 20rem;
+        font-size: 2rem;
+    }
+    .music_box{
+        width: 90%;
+    }
+    .music_con_left{
+        width: 8rem;
+        height: 8rem;
+        padding: 1rem;
+    }
+    .music_box{
+        padding: 2rem;
+    }
+    .music_name{
+        margin-bottom:0;
+    }
+    .music_operation{
+        margin-top:0;
+    }
+}

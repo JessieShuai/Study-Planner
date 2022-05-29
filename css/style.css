@@ -1,0 +1,113 @@
+:root{
+    --color1: #18568C;
+    --color2: #011640;
+    --color3: #021F59;
+    --color4: #F2F2F2;
+    --color5: #C9DFF2;
+}
+@font-face {
+    src: url("../font/PaytoneOne-Regular.ttf");
+    font-family: 'PaytoneOne';
+}
+@font-face {
+    src: url("../font/Signika-Bold.ttf");
+    font-family: 'SignikaBold';
+}
+@font-face {
+    src: url("../font/Signika-Light.ttf");
+    font-family: 'SignikaLight';
+}
+@font-face {
+    src: url("../font/Signika-Medium.ttf");
+    font-family: 'SignikaMedium';
+}
+html{
+    font-size: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.content{
+    width: 100%;
+    min-height: 100vh;
+    background: white;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+.app{
+    height: 100vh;
+    flex: auto;
+    overflow-y: auto;
+    background: #FAFAFA;
+}
+.app>div{
+    width: 100%;
+    height: 100%;
+}
+.page2{
+    display: none;
+}
+.page3{
+    display: none;
+}
+.page4{
+    display: none;
+}
+.menu{
+    width: 7rem;
+    height: 100vh;
+    background: var(--color1);
+}
+.menu>div{
+    width: 100%;
+    padding: 1.8rem;
+    box-sizing: border-box;
+    margin: 2rem auto;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.menu>div:hover{
+    background-color: #C9DFF2;
+}
+.menuActive{
+    background-color: #C9DFF2;
+}
+.tran3{
+    transition: all 0.3s;
+}
+input{
+    outline: none;
+    text-indent: 10px;
+}
+@media screen and (max-width: 768px){
+    html{
+        font-size: 8px !important;
+    }
+    .content{
+        display: block;
+    }
+    .menu{
+        width: 100%;
+        height: 7rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu>div{
+        margin: 0 2rem;
+        width: 13% !important;
+    }
+    .app{
+        width: 100vw;
+        height: calc(100vh - 7rem);
+    }
+}
