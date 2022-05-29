@@ -45,3 +45,230 @@
         </div>
 
         <!--page2-->
+        <div class="page2">
+            <div class="page2_title">Covey Quadrants</div>
+            <div class="page2_content">
+                <div>
+                    <div class="page2_sm_title" style="color: #CB1414">Urgent and lmportant</div>
+                    <div class="page2_sm_list"></div>
+                </div>
+                <div>
+                    <div class="page2_sm_title" style="color: #FB8B25">Not Urgent and lmportant</div>
+                    <div class="page2_sm_list"></div>
+                </div>
+                <div>
+                    <div class="page2_sm_title" style="color: #A931BC">Urgent and Unimportant</div>
+                    <div class="page2_sm_list"></div>
+                </div>
+                <div>
+                    <div class="page2_sm_title" style="color: #2BAA30">Not Urgent and Unimportant</div>
+                    <div class="page2_sm_list"></div>
+                </div>
+            </div>
+        </div>
+
+        <!--page3-->
+        <div class="page3">
+            <div class="page3_title">
+                <div class="Pomodoro" onclick="page3switchBtn('p')">Pomodoro Timer</div>
+                <div class="Stopwatch activeWatch" onclick="page3switchBtn()">Stopwatch</div>
+                <div class="music" onclick="musicPop()"><img src="img/music.png"/></div>
+            </div>
+            <div class="page3_stopWatch">
+                <div class="stopWatchPause" onclick="suspendWatch()">PAUSE</div>
+                <div class="stopWatchTime">
+                    <div class="stopWatchTimeChild">
+                        00 : 00 : 00
+                    </div>
+                </div>
+                <div class="stopWatchStop" onclick="timerWatch(this)">START</div>
+            </div>
+            <div class="page3_study">
+                <div class="page3_study_set">
+                    <div class="setStudyTimer">
+                        <div class="setTitle">Study Time</div>
+                        <div class="studyCom">
+                            <div class="subStudy" onclick="setStudyTimer(1,'cut')"><img src="img/sub.png"/></div>
+                            <div class="studyTime">15 : 00</div>
+                            <div class="addStudy" onclick="setStudyTimer(1,'add')"><img src="img/add.png"/></div>
+                        </div>
+                    </div>
+                    <div class="setBreakTimer">
+                        <div class="setTitle">Break Time</div>
+                        <div class="studyCom">
+                            <div class="subBreak" onclick="setStudyTimer(2,'cut')"><img src="img/sub.png"/></div>
+                            <div class="BreakTime">05 : 00</div>
+                            <div class="addBreak" onclick="setStudyTimer(2,'add')"><img src="img/add.png"/></div>
+                        </div>
+                    </div>
+                    <div class="setStartBtn" onclick="startTimer()">Start</div>
+                </div>
+                <div class="page3_study_timer">
+                    <div class="study_time_left" onclick="clickStartStudy(this)">START</div>
+                    <div class="study_time_timer">14 : 33</div>
+                    <div class="study_time_right" onclick="endLearning()">PASS</div>
+                </div>
+            </div>
+
+
+            <!--            music table  start-->
+            <div class="page3_music_pop">
+                <audio src="music/Sharman.mp3" class="audioMusic">Your browser does not support audio tags.</audio>
+                <div class="music_box">
+                    <div class="music_top">
+                        <div class="music_back" onclick="musicBack()">Back</div>
+                        <div class="music_stop">Stop</div>
+                    </div>
+                    <div class="music_con">
+                        <div class="music_con_left">
+                            <img src="img/eleMusic.png"/>
+                        </div>
+                        <div class="music_con_right">
+                            <div class="music_name">Sharman Rock - Hanabi</div>
+                            <div class="music_operation">
+                                <div onclick="lastSong()"><img src="img/shang.png"/></div>
+                                <div onclick="startPause()"><img src="img/kai.png" class="kaiImg"/></div>
+                                <div onclick="lastSong()"><img src="img/xia.png"/></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--            music table  end-->
+        </div>
+
+        <!--page4-->
+        <div class="page4">
+            <div class="page4_left">
+                <div class="page4_left_top">
+                    <div class="page4_left_list tran3">All re</div>
+                </div>
+                <div class="page4_left_bottom" onclick="addArticlePop()">+ Add List</div>
+            </div>
+            <div class="page4_center">
+                <div class="page4_center_top">
+                    <div onclick="addCreatorPop()">+ ADD</div>
+                    <div onclick="clickEditCreator()">\ EDIT</div>
+                    <div onclick="clickDelete()">- DELETE</div>
+                </div>
+                <div class="page4_search">
+                    <input type="search" class="page4_searchIpt" placeholder="Search all tasks">
+                    <img src="./img/seach.png" alt="" class="searchArticleIpt" onclick="searchArticle()">
+                </div>
+                <div class="page4_table">
+                    <div class="table_title">
+                        <div class="table_title_left">Title</div>
+                        <div class="table_title_right">Creator</div>
+                    </div>
+                    <div class="tableCon">
+                        <div class="table_list">
+                            <div class="tableLeft"></div>
+                            <div class="tableRight"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="page1_center_bank" onclick="page4GoBank()"><img src="img/goback.png"/></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--menu-->
+    <div class="menu">
+        <div class="menuActive menuc" onclick="clickMenu(event,this,'page1')"><img src="img/white task.png"/></div>
+        <div class="menuc" onclick="clickMenu(event,this,'page2')"><img src="img/white covey.png" alt=""></div>
+        <div class="menuc" onclick="clickMenu(event,this,'page3')"><img src="img/white time.png" alt=""></div>
+        <div class="menuc" onclick="clickMenu(event,this,'page4')"><img src="img/white read.png" alt=""></div>
+    </div>
+    <!--    add articles start-->
+    <div class="articleMark">
+        <div class="editTask">
+            <div class="editTaskTitle">Add task</div>
+            <input type="text" class="addArticleIpt" placeholder="Enter article name">
+            <div class="addTastBtn">
+                <button onclick="addArticle()">Add</button>
+                <button onclick="cancelArticle()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!--    add articles end-->
+    <!--    add tasks pop up start-->
+    <div class="tastMark">
+        <div class="editTask">
+            <div class="editTaskTitle">Add task</div>
+            <input type="text" class="addTastIpt" placeholder="Enter task name">
+            <div class="addTastBtn">
+                <button onclick="addTask()">Add</button>
+                <button onclick="cancelAdd()">Cancel</button>
+            </div>
+        </div>
+    </div>
+    <!--    add tasks pop up end-->
+
+    <!--    detail task start-->
+    <div class="missionPop">
+        <div class="missionBox">
+            <div class="missionBoxTop">
+                <div class="missionTitle">Title</div>
+                <input type="text" class="titleIpt">
+                <div class="missionTitle">Description</div>
+                <textarea class="descriptionIpt"></textarea>
+                <div class="missionTitle">List</div>
+                <select class="listIpt"></select>
+                <div class="missionTitle">Priority</div>
+                <select class="priorityIpt">
+                    <option value="Urgent and lmportant">Urgent and lmportant</option>
+                    <option value="Not Urgent and lmportant">Not Urgent and lmportant</option>
+                    <option value="Urgent and Unimportant">Urgent and Unimportant</option>
+                    <option value="Not Urgent and Unimportant">Not Urgent and Unimportant</option>
+                </select>
+                <div class="missionTitle">Data</div>
+                <input type="datetime-local" class="dataIpt">
+            </div>
+            <div class="missionBoxBottom">
+                <div class="cancelBtn" onclick="cancelMission()">Cancel</div>
+                <div class="doneBtn" onclick="doneMission()">Done</div>
+            </div>
+        </div>
+    </div>
+    <!--    detail task end-->
+
+<!--    creator type start-->
+    <div class="creatorPop">
+        <div class="creatorPopCon">
+            <div class="creatorPopTitle">Type</div>
+            <select class="creatorType"></select>
+
+            <div class="creatorPopTitle">Creator</div>
+            <input type="text" class="creatorIpt" placeholder="Write down creator...">
+
+            <div class="creatorPopTitle">Title</div>
+            <input type="text" class="creatorTitleIpt" placeholder="Write down reading title...">
+
+            <div class="creatorPopTitle">Date</div>
+            <input type="date" class="creatorDateIpt">
+
+            <div class="creatorPopTitle">Source</div>
+            <input type="text" class="creatorSourceIpt" placeholder="Source from ...">
+            <br>
+            <br>
+            <br>
+            <div class="creatorBtn">
+                <div class="creatorBtnCancel" onclick="cancelCreator()">Cancel</div>
+                <div class="creatorBtnDone" onclick="addCreator()">Done</div>
+            </div>
+        </div>
+    </div>
+<!--    creator type end-->
+</div>
+<script src="js/page1.js"></script>
+<script src="js/page2.js"></script>
+<script src="js/init.js"></script>
+<script src="js/page3.js"></script>
+<script src="js/page4.js"></script>
+
+<script src="js/menu.js"></script>
+
+</body>
+</html>
+
