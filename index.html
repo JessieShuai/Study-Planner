@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/page1.css">
+    <link rel="stylesheet" href="css/page2.css">
+    <link rel="stylesheet" href="css/page3.css">
+    <link rel="stylesheet" href="css/page4.css">
+</head>
+<body>
+<div class="content">
+    <!--task list-->
+    <div class="app">
+        <!--page1-->
+        <div class="page1">
+            <div class="page1_left">
+                <div class="page1_left_top">
+                    <div class="page1_left_list tran3"></div>
+                    <div class="page1_left_list tran3"></div>
+                    <div class="page1_left_list tran3"></div>
+                </div>
+                <div class="page1_left_bottom" onclick="addList()">+ Add List</div>
+            </div>
+            <div class="page1_center">
+                <div class="page1_center_top">
+                    <div class="page1_center_search">
+                        <input type="search" class="searchIpt" placeholder="Search all tasks">
+                        <img src="./img/seach.png" alt="" class="searchImg" onclick="searchMission()">
+                    </div>
+                    <div class="page1_center_add" onclick="addMissionList()">
+                        <span>+ Add your task here...</span>
+                    </div>
+                </div>
+                <div class="page1_center_bottom"></div>
+                <div class="goBack" onclick="clickGoBack()"><img src="img/goback.png"/></div>
+            </div>
+            <div class="page1_right">
+
+            </div>
+        </div>
+
+        <!--page2-->
